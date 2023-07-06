@@ -24,11 +24,11 @@ if (isset($_SESSION["user_id"])) {
 </head>
 <body>
     <h1>Home</h1>
-    <!--<h3>My orders</h3>
-    <hr>
-    <h3>Favorite orders</h3>-->
     <?php if (isset($user)): ?>
-        <p>Welcome,  <?= htmlspecialchars($user["username"]) ?></p>
+        <p>Welcome,  <?= htmlspecialchars($user["username"]) ?>!</p>
+        <h3>My orders</h3>
+        <hr>
+        <h3>Favorite orders</h3>
         <p><a href="logout.php">Log out</a></p>
         
     <?php else: ?>

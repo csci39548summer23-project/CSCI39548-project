@@ -32,9 +32,10 @@ if ($stmt->execute()) {
 } else {
     
     if ($mysqli->errno === 1062) {
-        die("username already taken");
+        die("username already taken!");
+        
     } else {
-        die($mysqli->error . " " . $mysqli->errno);
+        die("$mysqli->error . " " . $mysqli->errno");
     }
 }
 

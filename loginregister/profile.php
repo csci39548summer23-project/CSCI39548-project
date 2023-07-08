@@ -23,17 +23,19 @@ if (isset($_SESSION["user_id"])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
-    <h1>Home</h1>
+    <h1>Account Settings</h1>
     <?php if (isset($user)): ?>
         <p>Welcome,  <?= htmlspecialchars($user["username"]) ?>!</p>
         <h3>My orders</h3>
         <hr>
-        <h3>Favorite orders</h3>
+        
         <p><a href="logout.php">Log out</a></p>
         
     <?php else: ?>
         <p><a href="login.php">Log in</a> or <a href="signup.html">sign up</a></p>
-    <?php endif; ?>
+    <?php endif; ?> 
+    <hr>
+
     
 </body>
 </html>

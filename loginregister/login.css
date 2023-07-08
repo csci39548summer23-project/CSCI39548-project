@@ -2,12 +2,16 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 2px solid;
-    border: 12px;
-    margin-top: 10%;
     font-size:large;
 }
 h1 {
-    color: #ff69b4;
+    align-items: center;
+    flex-direction: column;
+    color: #0d6bae;
 
+}
+
+button {
+    background-color: #0d6bae;
+    color: white
 }

@@ -78,6 +78,81 @@ section nav .icon i{
 }
 
 section nav .icon i:hover{
+    color: #0d6bae;   
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+section .main .main_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+section .main .main_text h1 span{
+    margin-left: -20px;
     color: #0d6bae;
-    
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+
+}
+section .main .main_image{
+    width: 700px;
+    position: relative;
+    left: -210px;
+}
+
+section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 120px;
+    bottom: 250px;
+    line-height: 22px;
+
+}
+
+section .main_btn{
+    background: #0d6bae;
+    position: relative;
+    left: 300px;
+    width: 150px;
+    cursor: pointer;
+    bottom: 200px;
+    padding: 12px;
+}
+
+section .main_btn a{
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .about_content p{
+    position: relative;
+    bottom: -200px;
+    left: 300px;
+
+
+}
+
+section .about_content .about_image2{
+    position: relative;
+    left: 200px;
+    bottom: 350px;
+}
+
+section .about_content .about_image1{
+    width: 10px;
+    position: relative;
+    left: 1010px;
+    bottom: 300px;
+
 }

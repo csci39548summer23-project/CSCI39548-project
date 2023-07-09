@@ -16,7 +16,7 @@ $sql = "INSERT INTO accounts (username, password_hash)
         
 $stmt = $mysqli->stmt_init();
 
-if ( ! $stmt->prepare($sql)) {
+if (!$stmt->prepare($sql)) {
     die("SQL error: " . $mysqli->error);
 }
 
@@ -35,8 +35,6 @@ if ($stmt->execute()) {
         die("username already taken!");
         
     } else {
-        die("$mysqli->error . " " . $mysqli->errno");
+        die("$mysqli->error . "  . $mysqli->errno);
     }
 }
-
-

@@ -26,15 +26,15 @@ if (isset($_SESSION["user_id"])) {
     <h1>Account Settings</h1>
     <?php if (isset($user)): ?>
         <p>Welcome,  <?= htmlspecialchars($user["username"]) ?>!</p>
-        <h3>My orders</h3>
         <hr>
-        
-        <p><a href="logout.php">Log out</a></p>
-        
+        <p><button onclick="location.href = 'logout.php'">Log out</button></p>
+        <hr>
+        <p><button>Delete account</button> <strong>ONLY</strong> click here if you want to delete your account.</p>
     <?php else: ?>
-        <p><a href="login.php">Log in</a> or <a href="signup.html">sign up</a></p>
+        <p><button onclick="location.href = 'login.php'">Log in</button> or <button onclick="location.href = 'signup.html'">Register</button></p>
     <?php endif; ?> 
-    <hr>
+    
+
 
     
 </body>

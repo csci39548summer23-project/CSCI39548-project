@@ -1,17 +1,19 @@
 <?php
 
 $host = "localhost";
-$dbname = "login_data";
-$username = "root";
-$password = "";
+$dbname = "id21015324_login_data";
+$username = "id21015324_logindatabase";
+$password = "DC8cqPGM8Y!";
 
-$mysqli = new mysqli(hostname: $host,
-                     username: $username,
-                     password: $password,
-                     database: $dbname);
-                     
+
+$mysqli = new mysqli($host,$username,$password,$dbname);
+
+ 
+                                       
 if ($mysqli->connect_errno) {
     die("Connection error: " . $mysqli->connect_error);
 }
 
 return $mysqli;
+
+?>

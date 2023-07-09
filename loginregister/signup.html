@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+<link rel="stylesheet" href="login.css">
+<script src="authenticate.js" defer></script>
+
+</head>
+
+<body>
+
+<form class="container" action="register.php" method="post" novalidate>
+  <h1>Sign up:</h1>
+      <label>
+        <p>Username</p>
+        <input type="text" id="username" name="username">
+      </label>
+      <label>
+        <p>Password</p>
+        <input type="password" id="password" name="password">
+      </label>
+      <label>
+          <p>Confirm Password</p>
+          <input type="password" id="con_pass" name="con_pass">
+        </label>
+      <div>
+        <button>Create Account</button>
+        <p><a href="login.php">Log in instead.</a></p>
+      </div>
+      
+
+    </form>
+    
+</body>
+</html>

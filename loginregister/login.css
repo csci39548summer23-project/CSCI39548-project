@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size:large;
+}
+h1 {
+    color: #0d6bae;
+
+}
+
+button {
+    background-color: #0d6bae;
+    color: white
+}

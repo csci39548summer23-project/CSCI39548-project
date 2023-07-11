@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
             session_start();
             session_regenerate_id();
             $_SESSION["user_id"] = $user["id"];
-            header("Location: profile.php");
+            header("Location: ../logged in/indexlog.html");
             exit;
         }
     }

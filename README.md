@@ -6,3 +6,5 @@ You will take part in a group project to create a working responsive website (ma
 presentation. A github repository should be created for the project and named as the project. The instructor should be sent an invite to view the project repository.
 
 A webpage that displays our restaurant, our menu and prices. It allows users to search for things, log in/sign up,-make orders which will be stored in a database associated with the account. And it will also display different recipes and allow users to end their own recipes.
+
+Hosted website: 

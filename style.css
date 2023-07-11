@@ -24,7 +24,6 @@ section nav{
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
-
 }
 
 section nav .logo img{
@@ -39,7 +38,8 @@ section nav ul{
 
 section nav ul li{
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 40px;
+    left: 40px;
 
 }
 

@@ -136,27 +136,69 @@ section .main_btn a{
     text-decoration: none;
 }
 
-section .about_content p{
-    position: relative;
-    bottom: -200px;
-    left: 300px;
-
-
+.about {
+    width: 100%;
+    padding: 70px 0;
 }
 
-section .about_content .about_image2{
-    position: relative;
-    left: 200px;
-    bottom: 350px;
+.about .about_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
 
-section .about_content .about_image1{
+
+
+.about .about_main .about_image1 img{
+    width: 800px;
+    position: relative;
+    top: -950px;
+}
+
+/* section .about_content .about_image1{
     width: 10px;
     position: relative;
     left: 1010px;
     bottom: 300px;
 
+} */
+
+.about .about_main .about_text h1 span{
+    color: #0d6bae;
+    margin-right: 15px;
+    font-family: mv boli;
+    top: -860px;
 }
+
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+    top: -1000px;
+    left: -40px;
+
+}
+
+.about .about_main .about_text h3{
+    font-size: 35px;
+    position: relative;
+    bottom: 50px;
+    top: -1000px;
+    left: -40px;
+
+}
+
+.about .about_main .about_text p{
+    font-size: 15px;
+    position: relative;
+    bottom: 50px;
+    top: -980px;
+    left: -40px;
+}
+
+
+
 
 section nav .signin a{
     text-decoration: none;
@@ -209,3 +251,4 @@ section nav .signin a:hover::after{
 section nav .signin a:hover{
     color: #0d6bae;
 }
+

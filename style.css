@@ -34,11 +34,12 @@ section nav .logo img{
 
 section nav ul{
     list-style: none;
+    margin: 0 500px;
 }
 
 section nav ul li{
     display: inline-block;
-    margin: 0 40px;
+    margin: 0 70px;
     left: 40px;
 
 }
@@ -72,7 +73,7 @@ section nav ul li a:hover{
 section nav .icon i{
     font-size: 18px;
     color: black;
-    margin: 0 5px;
+    margin: 0 -20px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -155,4 +156,56 @@ section .about_content .about_image1{
     left: 1010px;
     bottom: 300px;
 
+}
+
+section nav .signin a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav .signin a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0d6bae;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav .signup a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav .signup a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0d6bae;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav .signup a:hover::after{
+    width: 100%;
+
+}
+
+section nav .signup a:hover{
+    color: #0d6bae;
+}
+
+section nav .signin a:hover::after{
+    width: 100%;
+
+}
+
+section nav .signin a:hover{
+    color: #0d6bae;
 }

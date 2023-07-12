@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="style.css">
   <title>Restaurant Menu</title>
   <style>
     /* CSS styles for the menu page */
@@ -92,21 +93,18 @@
       <p class="description">Classic pasta dish with creamy sauce, bacon, and Parmesan cheese.</p>
       <p class="price">$12.99</p>
       <p class="calories">Calories: 650</p>
-      <button class="add-to-cart-btn" onclick="addToCart('main1', 12.99)">Add to Cart</button>
     </li>
     <li id="main2">
       <h3>Margherita Pizza</h3>
       <p class="description">Traditional Italian pizza with tomato sauce, mozzarella cheese, and fresh basil.</p>
       <p class="price">$10.99</p>
       <p class="calories">Calories: 800</p>
-      <button class="add-to-cart-btn" onclick="addToCart('main2', 10.99)">Add to Cart</button>
     </li>
     <li id="main3">
       <h3>Grilled Salmon</h3>
       <p class="description">Fresh salmon fillet grilled to perfection and served with steamed vegetables.</p>
       <p class="price">$15.99</p>
       <p class="calories">Calories: 450</p>
-      <button class="add-to-cart-btn" onclick="addToCart('main3', 15.99)">Add to Cart</button>
     </li>
     <!-- Add more main dishes here -->
   </ul>
@@ -118,21 +116,20 @@
       <p class="description">Crispy chicken wings tossed in your choice of sauce (BBQ, Buffalo, or Teriyaki).</p>
       <p class="price">$8.99</p>
       <p class="calories">Calories: 550</p>
-      <button class="add-to-cart-btn" onclick="addToCart('app1', 8.99)">Add to Cart</button>
     </li>
     <li id="app2">
       <h3>Bruschetta</h3>
       <p class="description">Toasted bread topped with diced tomatoes, fresh basil, garlic, and olive oil.</p>
       <p class="price">$6.99</p>
       <p class="calories">Calories: 320</p>
-      <button class="add-to-cart-btn" onclick="addToCart('app2', 6.99)">Add to Cart</button>
+      
     </li>
     <li id="app3">
       <h3>Mozzarella Sticks</h3>
       <p class="description">Golden-fried mozzarella sticks served with marinara sauce.</p>
       <p class="price">$7.99</p>
       <p class="calories">Calories: 480</p>
-      <button class="add-to-cart-btn" onclick="addToCart('app3', 7.99)">Add to Cart</button>
+      
     </li>
     <!-- Add more appetizers here -->
   </ul>
@@ -143,21 +140,21 @@
       <h3>Soft Drinks</h3>
       <p class="description">Coca-Cola, Sprite, Pepsi, Diet Coke</p>
       <p class="price">$2.49</p>
-      <button class="add-to-cart-btn" onclick="addToCart('drink1', 2.49)">Add to Cart</button>
+      
     </li>
     
     <li id="drink2">
       <h3>Iced Tea</h3>
       <p class="description">Classic iced tea, available sweetened or unsweetened.</p>
       <p class="price">$2.99</p>
-      <button class="add-to-cart-btn" onclick="addToCart('drink2', 2.99)">Add to Cart</button>
+      
     </li>
     
     <li id="drink3">
       <h3>Fruit Smoothies</h3>
       <p class="description">Refreshing smoothies made with fresh fruits and yogurt.</p>
       <p class="price">$4.99</p>
-      <button class="add-to-cart-btn" onclick="addToCart('drink3', 4.99)">Add to Cart</button>
+      
     </li>
     <!-- Add more drink options here -->
   </ul>
@@ -169,62 +166,69 @@
       <p class="description">Warm chocolate brownie topped with vanilla ice cream, whipped cream, and chocolate sauce.</p>
       <p class="price">$6.99</p>
       <p class="calories">Calories: 680</p>
-      <button class="add-to-cart-btn" onclick="addToCart('dessert1', 6.99)">Add to Cart</button>
+      
     </li>
     <li id="dessert2">
       <h3>New York Cheesecake</h3>
       <p class="description">Creamy cheesecake with a graham cracker crust, served with raspberry sauce.</p>
       <p class="price">$5.99</p>
       <p class="calories">Calories: 450</p>
-      <button class="add-to-cart-btn" onclick="addToCart('dessert2', 5.99)">Add to Cart</button>
+      
     </li>
     <li id="dessert3">
       <h3>Apple Pie</h3>
       <p class="description">Classic apple pie with a flaky crust, served warm with vanilla ice cream.</p>
       <p class="price">$4.99</p>
       <p class="calories">Calories: 380</p>
-      <button class="add-to-cart-btn" onclick="addToCart('dessert3', 4.99)">Add to Cart</button>
+      
     </li>
     <!-- Add more desserts here -->
   </ul>
+    <footer>
+        <div class="footer_main">
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>New York</p>
+                <p>Tokyo</p>
+                <p>Los Angeles</p>
+                <p>Paris</p>
 
-  <!-- Cart Items -->
-  <div id="cart-items">
-    <h2>Your Cart</h2>
-    <ul id="cart-list"></ul>
-    <p id="total-cost">Total Cost: $0.00</p>
-  </div>
+            </div>
 
-  <script>
-    // Cart function
-    var cart = [];
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Order</p>
 
-    function addToCart(itemId, itemPrice) {
-      var item = document.getElementById(itemId);
-      var itemName = item.querySelector("h3").textContent;
+            </div>
 
-      cart.push({ name: itemName, price: itemPrice });
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+1(111)222-2333</p>
+                <p>recipeforyou@gmail.com</p>
+                <p>contactrecipe@gmail.com</p>
+            </div>
 
-      var cartList = document.getElementById("cart-list");
-      var cartItem = document.createElement("li");
-      cartItem.textContent = itemName + " - $" + itemPrice.toFixed(2);
-      cartList.appendChild(cartItem);
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payment</p>
+                <p>24/7 service </p>
+            </div>
 
-      calculateTotalCost();
-    }
+            <div class="footer_tag">
+                <h2>Follow us</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
 
-    function calculateTotalCost() {
-      var totalCost = 0;
 
-      for (var i = 0; i < cart.length; i++) {
-        totalCost += cart[i].price;
-      }
+            </div>
+        </div>
 
-      var totalCostElement = document.getElementById("total-cost");
-      totalCostElement.textContent = "Total Cost: $" + totalCost.toFixed(2);
-    }
-  </script>
-  
-
+        <p class="end"><b><span>Recipe for you</span> © 2023</b></p>
+    </footer>
 </body>
 </html>

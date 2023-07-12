@@ -7,4 +7,4 @@ presentation. A github repository should be created for the project and named as
 
 A webpage that displays our restaurant, our menu and prices. It allows users to search for things, log in/sign up,-make orders which will be stored in a database associated with the account. And it will also display different recipes and allow users to end their own recipes.
 
-Hosted website: 
+Hosted website: https://ickier-liquor.000webhostapp.com/
